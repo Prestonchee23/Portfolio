@@ -18,10 +18,13 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background: url("images/home_page/ProfileBanner.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #007BFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -70,6 +73,29 @@ section h2 {
 section p {
     font-size: 1.1rem;
     color: #555;
+}
+
+.site-footer {
+  background-color: #333;;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #6ab0f3;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 5px 0;
 }
 
 /* Footer styles */
