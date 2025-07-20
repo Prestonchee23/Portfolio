@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Portfolio</title>
-        <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-            }
-            header {
-                background: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-            nav {
-                margin: 20px 0;
-            }
-            nav a {
-                margin: 0 15px;
-                color: #fff;
-                text-decoration: none;
-            }
-            .container {
-                width: 80%;
-                margin: auto;
-                overflow: hidden;
-            }
-            .profile {
-                text-align: center;
-                margin: 20px 0;
-            }
-            .about {
-                background: #fff;
-                padding: 20px;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-        </style>
-    </head>
-    <body>
-    
-    <header>
-        <h1>Preston Chee</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Chee - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Preston Chee</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="spiritual.html">Spiritual</a>
+    </nav>
+</header>
 
 <div class="container">
-    <h2>Projects</h2>
-    <p>
-        <!-- Add your project details here -->
-        <strong>Project Title 1</strong><br>
-        Description of the project, technologies used, and your role.<br>
-        <a href="link-to-project1.com" target="_blank">View Project</a><br><br>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
 
-        <strong>Project Title 2</strong><br>
-        Description of the project, technologies used, and your role.<br>
-        <a href="link-to-project2.com" target="_blank">View Project</a><br><br>
+        <div class="project-card">
+            <h3>Mathew Made Construction Internship</h3>
+            <p>Managed real-world networking challenges, including VPN configuration and VLAN routing. 
+                Worked with QNAP NAS, Cisco APs, pfSense firewalls, and PoE switches. Authored user 
+                guides and initiated cybersecurity policy planning and incident response documentation.</p>
+        </div>
 
-        <strong>Project Title 3</strong><br>
-        Description of the project, technologies used, and your role.<br>
-        <a href="link-to-project3.com" target="_blank">View Project</a><br><br>
-    </p>
+        <div class="project-card">
+            <h3>Hybrid Cloud Backup Proposal</h3>
+            <p>Designed a hybrid backup system using NAS and Google Workspace. Balanced cost, security, 
+                and scalability. Developed governance and security policies with emphasis on encryption, 
+                MFA, VPN, and DR planning. Sharpened skills in analysis, writing, and IT strategy.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Windows 11 STIG Compliance & Security Policy</h3>
+            <p>Audited Windows 11 systems using STIG SCAP Benchmarks. Identified vulnerabilities, built a 
+                risk register, and co-developed a corporate policy aligned to CIS Controls. Communicated 
+                technical findings to non-technical stakeholders, balancing security with business needs.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Active Directory Environment Setup</h3>
+            <p>Built an AD environment with multiple client machines. Implemented group policies and secure
+                 access controls. Overcame group policy conflicts and refined skills in Windows Server, 
+                 networking, and enterprise-level system administration.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Phishing Email Server & Reverse Shell Exploit</h3>
+            <p>Built a phishing email server for awareness testing and exploited certificate weaknesses in a 
+                simulated environment. Demonstrated ethical hacking techniques, focusing on responsible 
+                execution and highlighting the importance of security training.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Card Authentication Environment</h3>
+            <p>Implemented a smart card login system with PKI and Certificate Authority configuration. 
+                Managed certificate lifecycles and ensured compatibility across clients. Strengthened expertise 
+                in secure authentication and enterprise-level access control.</p>
+        </div>
+
+    </div>
 </div>
 
 </body>
