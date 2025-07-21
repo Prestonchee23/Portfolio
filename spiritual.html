@@ -24,25 +24,41 @@
 
   <main class="content">
 
-    <section class="spiritual-principles">
-    <h3>Core Spiritual Principles</h3>
-    <div class="card-grid">
-        <article class="spiritual-card">
-        <h4>Becoming Through Christlike Discipleship</h4>
-        <p>Life is not just about what I accomplish, but who I become. Christlike leadership, patience, and humility guide my approach to cybersecurity.</p>
+    <section class="spiritual-materials">
+      <h3>Inspirational Teachings & Experiences</h3>
+      <div class="card-grid">
+
+        <article class="spiritual-card" data-modal="modal-ether">
+          <h4>Ether 12:27 — Strength Through Weakness</h4>
+          <p><strong>Theme:</strong> Resilience & Spiritual Dependence</p>
+          <p><strong>Reflection:</strong> Technical failures became sacred ground for growth.</p>
         </article>
 
-        <article class="spiritual-card">
-        <h4>Applying the Power of the Atonement Daily</h4>
-        <p>Christ’s enabling power helps me endure trials, overcome imposter syndrome, and stay grounded when facing technical or personal challenges.</p>
+        <article class="spiritual-card" data-modal="modal-hinckley">
+          <h4>Way to Be – Gordon B. Hinckley</h4>
+          <p><strong>Theme:</strong> Integrity & Ethical Grounding</p>
+          <p><strong>Reflection:</strong> The "Nine Be's" helped me stay honest and intentional.</p>
         </article>
 
-        <article class="spiritual-card">
-        <h4>Honoring Sacred Covenants in All Aspects of Life</h4>
-        <p>My temple covenants inspire integrity and trust in every setting — including the sensitive, high-responsibility field of cybersecurity.</p>
-        </article>
-    </div>
+      </div>
     </section>
+
+        <!-- Modals -->
+    <div id="modal-ether" class="modal">
+      <div class="modal-content">
+        <span class="close" data-close>&times;</span>
+        <h3>Ether 12:27 — Strength Through Weakness</h3>
+        <p>This scripture taught me that my weaknesses are not a limitation but a gateway to spiritual refinement. When I struggled with technical challenges, I leaned into Christ’s strength and found growth in unexpected ways.</p>
+      </div>
+    </div>
+
+    <div id="modal-hinckley" class="modal">
+      <div class="modal-content">
+        <span class="close" data-close>&times;</span>
+        <h3>Way to Be – Gordon B. Hinckley</h3>
+        <p>The “Nine Be’s” offered a framework of moral clarity during technical and leadership decisions. These principles helped guide my actions and interactions during projects and service opportunities.</p>
+      </div>
+    </div>
 
     <section class="spiritual-materials">
       <h3>Inspirational Teachings & Experiences</h3>
@@ -103,6 +119,38 @@
   <footer>
     <p>&copy; 2025 Preston Chee</p>
   </footer>
+
+<!--  Modal JS -->
+<script>
+  // Open modal when card is clicked
+  document.querySelectorAll(".spiritual-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const modalId = card.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden"; // Prevent background scroll
+      }
+    });
+  });
+
+  // Close modal when "x" is clicked
+  document.querySelectorAll("[data-close]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modal = btn.closest(".modal");
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+  });
+
+  // Close modal when clicking outside the modal content
+  window.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal")) {
+      e.target.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
 
 </body>
 </html>
