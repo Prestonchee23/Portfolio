@@ -29,21 +29,21 @@
       <h3>Spiritual Principles</h3>
       <div class="card-grid">
 
-        <article class="spiritual-card" data-modal="modal-discipleship">
+        <article class="main-card" data-modal="modal-discipleship">
           <h3>Becoming Through Christlike Discipleship</h3>
           <p><strong>Theme:</strong> Resilience & Spiritual Dependence</p>
           <p><strong>Reflection:</strong> Learning that true strength in tech comes from Christlike 
             patience, humility, and consistent trust in the Lord.</p>
         </article>
 
-        <article class="spiritual-card" data-modal="modal-atonement">
+        <article class="main-card" data-modal="modal-atonement">
           <h3>Applying the Power of the Atonement Daily</h3>
           <p><strong>Theme:</strong> Integrity & Ethical Grounding</p>
           <p><strong>Reflection:</strong> Christ’s Atonement helps me stay grounded, honest, and 
             hopeful—even when I fall short.</p>
         </article>
         
-        <article class="spiritual-card" data-modal="modal-covenants">
+        <article class="main-card" data-modal="modal-covenants">
           <h3>Honoring Sacred Covenants in All Aspects of Life</h3>
           <p><strong>Theme:</strong> Resilience & Spiritual Dependence</p>
           <p><strong>Reflection:</strong> My covenants guide my integrity in cybersecurity and 
@@ -104,34 +104,34 @@
       <h3>Inspirational Teachings & Experiences</h3>
       <div class="card-grid">
 
-        <article class="spiritual-card" data-modal="modal-ether">
+        <article class="main-card" data-modal="modal-ether">
           <h3>Ether 12:27 — Strength Through Weakness</h3>
           <p><strong>Theme:</strong> Resilience & Spiritual Dependence</p>
           <p><strong>Reflection:</strong> Technical failures became sacred ground for growth.</p>
         </article>
 
-        <article class="spiritual-card" data-modal="modal-hinkley">
+        <article class="main-card" data-modal="modal-hinkley">
           <h3>Way to Be – Gordon B. Hinckley</h3>
           <p><strong>Theme:</strong> Integrity & Ethical Grounding</p>
           <p><strong>Reflection:</strong> The "Nine Be's" helped me stay honest and intentional as I 
             built my technical and mentoring skills.</p>
         </article>
 
-        <article class="spiritual-card" data-modal="modal-temple">
+        <article class="main-card" data-modal="modal-temple">
           <h3>Temple Worker Experience</h3>
           <p><strong>Theme:</strong> Covenant Responsibility</p>
           <p><strong>Reflection:</strong> Stewardship at the temple mirrored my duty in protecting data. 
             Every system I touch carries sacred accountability.</p>
         </article>
 
-        <article class="spiritual-card" data-modal="modal-behold">
+        <article class="main-card" data-modal="modal-behold">
           <h3>"Behold Thy Mother" – Jeffrey R. Holland</h3>
           <p><strong>Theme:</strong> Christlike Compassion</p>
           <p><strong>Reflection:</strong> “You’re doing better than you think” reminded me to offer 
             grace — to myself and others — in all technical journeys.</p>
         </article>
 
-        <article class="spiritual-card" data-modal="modal-trials">
+        <article class="main-card" data-modal="modal-trials">
           <h3>D&C 122:7 — Trials Are Temporary</h3>
           <p><strong>Theme:</strong> Endurance & Eternal Perspective</p>
           <p><strong>Reflection:</strong> This verse grounded me during burnout. It taught me that 
@@ -221,28 +221,28 @@
   <h3>Spiritual Reflections</h3>
   <div class="card-grid">
 
-    <article class="spiritual-card" data-modal="modal-gratitude">
+    <article class="main-card" data-modal="modal-gratitude">
       <h3>Gratitude in Daily Challenges</h3>
       <p><strong>Theme:</strong> Thankfulness & Perspective</p>
       <p><strong>Reflection:</strong> Recognizing blessings even during technical frustrations strengthens 
         my faith and patience.</p>
     </article>
 
-    <article class="spiritual-card" data-modal="modal-teaching">
+    <article class="main-card" data-modal="modal-teaching">
       <h3>Teaching as a Spiritual Practice</h3>
       <p><strong>Theme:</strong> Service & Growth</p>
       <p><strong>Reflection:</strong> Sharing knowledge deepens my understanding and fosters compassion 
         for learners.</p>
     </article>
 
-    <article class="spiritual-card" data-modal="modal-hope">
+    <article class="main-card" data-modal="modal-hope">
       <h3>Hope Amid Uncertainty</h3>
       <p><strong>Theme:</strong> Trust & Endurance</p>
       <p><strong>Reflection:</strong> Trusting God’s plan helps me navigate ambiguity in both career and 
         spiritual life.</p>
     </article>
 
-      <article class="spiritual-card" data-modal="modal-act">
+      <article class="main-card" data-modal="modal-act">
       <h3>Agency and Action</h3>
       <p><strong>Theme:</strong> Endurance & Eternal Perspective</p>
       <p><strong>Reflection:</strong> It is far better to be a person who takes action rather than wait idly by.</p>
@@ -341,7 +341,7 @@
 <!--  Modal JS -->
 <script>
   // Open modal when card is clicked
-  document.querySelectorAll(".spiritual-card").forEach(card => {
+  document.querySelectorAll(".main-card").forEach(card => {
     card.addEventListener("click", () => {
       const modalId = card.getAttribute("data-modal");
       const modal = document.getElementById(modalId);

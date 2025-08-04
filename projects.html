@@ -26,32 +26,32 @@
 
 <div class="container">
   <div class="projects">
-    <div class="spiritual-card" data-modal="modal1">
+    <div class="main-card" data-modal="modal1">
       <h3>Mathew Made Construction Internship</h3>
       <p>Managed real-world networking challenges, including VPN configuration and VLAN routing...</p>
     </div>
 
-    <div class="spiritual-card" data-modal="modal2">
+    <div class="main-card" data-modal="modal2">
       <h3>Hybrid Cloud Backup Proposal</h3>
       <p>Designed a hybrid backup system using NAS and Google Workspace...</p>
     </div>
 
-    <div class="spiritual-card" data-modal="modal3">
+    <div class="main-card" data-modal="modal3">
       <h3>Windows 11 STIG Compliance</h3>
       <p>Audited Windows 11 systems using STIG SCAP Benchmarks...</p>
     </div>
 
-    <div class="spiritual-card" data-modal="modal4">
+    <div class="main-card" data-modal="modal4">
       <h3>Active Directory Environment Setup</h3>
       <p>Built an AD environment with multiple client machines...</p>
     </div>
 
-    <div class="spiritual-card" data-modal="modal5">
+    <div class="main-card" data-modal="modal5">
       <h3>Phishing Email Server & Exploit</h3>
       <p>Built a phishing email server for awareness testing...</p>
     </div>
 
-    <div class="spiritual-card" data-modal="modal6">
+    <div class="main-card" data-modal="modal6">
       <h3>Smart Card Authentication</h3>
       <p>Implemented a smart card login system with PKI and CA configuration...</p>
     </div>
@@ -179,7 +179,7 @@
 
 <!--  Modal JS -->
 <script>
-  document.querySelectorAll('.spiritual-card').forEach(card => {
+  document.querySelectorAll('.main-card').forEach(card => {
     card.addEventListener('click', () => {
       const modalId = card.getAttribute('data-modal');
       const modal = document.getElementById(modalId);

@@ -257,7 +257,7 @@ nav a.active {
   gap: 1.5rem;
 }
 
-.spiritual-card {
+.main-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -267,14 +267,14 @@ nav a.active {
   border-top: 4px solid var(--accent);
 }
 
-.spiritual-card:hover {
+.main-card:hover {
   transform: translateY(-4px);
 }
 
-.spiritual-card h4 {
+.main-card h4 {
   margin-top: 0;
 }
 
-.spiritual-card ul {
+.main-card ul {
   padding-left: 1.2rem;
 }
