@@ -218,30 +218,6 @@ nav a.active {
     margin: auto;
 }
 
-.spiritual-hero {
-    background: linear-gradient(to right, #007acc, #005c99);
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.spiritual-hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #00509e;                  /* Slightly darker blue for heading */
-  font-weight: 600;
-}
-
-.spiritual-hero p {
-  font-size: 1.15rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.5;
-  color: #004080;                  /* Medium dark blue for paragraph */
-}
-
 .spiritual-principles, .spiritual-materials {
   padding: 2rem;
 }
