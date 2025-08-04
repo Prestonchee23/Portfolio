@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preston Chee - Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Preston Chee</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="spiritual.html">Spiritual</a>
+    <a href="ethics.html">Ethics</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Projects</h2>
+  <p>Discover the technical projects and hands-on experience that have shaped my skills in cybersecurity, system administration, and network design.</p>
+</div>
+
+<div class="container">
+  <div class="projects">
+    <div class="main-card" data-modal="modal1">
+      <h3>Mathew Made Construction Internship</h3>
+      <p>Managed real-world networking challenges, including VPN configuration and VLAN routing...</p>
+    </div>
+
+    <div class="main-card" data-modal="modal2">
+      <h3>Hybrid Cloud Backup Proposal</h3>
+      <p>Designed a hybrid backup system using NAS and Google Workspace...</p>
+    </div>
+
+    <div class="main-card" data-modal="modal3">
+      <h3>Windows 11 STIG Compliance</h3>
+      <p>Audited Windows 11 systems using STIG SCAP Benchmarks...</p>
+    </div>
+
+    <div class="main-card" data-modal="modal4">
+      <h3>Active Directory Environment Setup</h3>
+      <p>Built an AD environment with multiple client machines...</p>
+    </div>
+
+    <div class="main-card" data-modal="modal5">
+      <h3>Phishing Email Server & Exploit</h3>
+      <p>Built a phishing email server for awareness testing...</p>
+    </div>
+
+    <div class="main-card" data-modal="modal6">
+      <h3>Smart Card Authentication</h3>
+      <p>Implemented a smart card login system with PKI and CA configuration...</p>
+    </div>
+  </div>
+</div>
+
+<!--  Modal windows (hidden by default) -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h2>Mathew Made Construction Internship<br></br></h2>
+      <h3>Overview:</h3>
+      <p>During my internship, I faced and solved a lot of real-world networking challenges. I was responsible for 
+        building and troubleshooting a secure remote access system, diagnosing and fixing intermittent internet 
+        connectivity issues. I configured VLANs to separate guest and internal traffic, which involved detailed 
+        troubleshooting and fine-tuning routing between the switch and firewall.<br></br></p>
+
+      <p>Besides VLAN setup, I worked directly with the company’s firewall to manage security rules and remote access. 
+        I also configured a network-attached storage (NAS) system to support data backup and sharing across 
+        departments. To keep everything running smoothly, I set up and optimized a managed Layer 2 switch that supports 
+        Power over Ethernet (PoE), ensuring proper traffic flow between devices.<br></br></p>
+
+      <p>As part of the company’s push toward Cybersecurity Maturity Model Certification (CMMC) Level 1, I helped 
+        review system setups to meet compliance requirements and assisted in drafting clear security policies and 
+        procedures.<br></br></p>
+
+      <p>These hands-on experiences gave me a solid understanding of enterprise networking, system configuration, and 
+        security best practices. I’m also working on documentation and helping create incident response plans and 
+        security policies to further improve the company’s cybersecurity.<br></br></p>
+
+      <h3>Complex Challenges Faced:</h3>
+      <ul style="margin-left: 40px;">
+        <li>Building and troubleshooting secure remote access with unreliable internet connections.</li>
+        <li>Configuring VLANs and troubleshooting routing issues between switches and firewalls.</li>
+        <li>Managing firewall rules and remote access settings to keep security tight.</li>
+        <li>Integrating NAS systems to support backup and file sharing.</li>
+        <li>Optimizing Layer 2 switches with PoE to ensure network stability.<br></br></li>
+      </ul>
+
+      <h3>Ethical Considerations and Actions Taken:</h3>
+      <ul style="margin-left: 40px;">
+        <li>Avoided using real customer data during testing to protect privacy, opting for synthetic data instead.</li>
+        <li>Implemented strict access controls and multi-factor authentication to safeguard sensitive information.</li>
+        <li>Maintained transparency with supervisors about security risks, always following company policies and legal requirements.<br></br></li>
+      </ul>
+
+      <h3>Outcomes:</h3>
+      <ul style="margin-left: 40px;">
+        <li>Improved network reliability and security across the company.</li>
+        <li>Helped the company move closer to CMMC Level 1 compliance.</li>
+        <li>Gained practical experience balancing technical needs with ethical responsibility.<br></br></li>
+      </ul>
+      <a href="ethics.html#ethics-internship" class="link-button">
+        View Ethical Reflection (under “Internship: Handling Sensitive Customer Data”)
+      </a>
+
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h3>Hybrid Cloud Backup Proposal<br></br></h3>
+    <p>
+      I led the design and proposal of a hybrid backup solution combining local NAS storage with Google Workspace cloud services to provide scalable, secure, and cost-effective data protection for Mathew Made Construction. The solution balanced offline access for critical files with cloud-based scalability during peak seasonal demands.<br><br>
+      Key challenges included optimizing budget constraints while ensuring data reliability, security (with MFA, VPN, and encryption), and disaster recovery capabilities. I conducted thorough technical research, analyzed cost-benefit trade-offs, and developed governance and security policies.<br><br>
+      This project honed my skills in critical thinking, technical evaluation, and professional proposal writing, resulting in a comprehensive plan that aligned with company needs and emphasized efficiency and security.
+    </p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h3>Windows 11 STIG Compliance<br></br></h3>
+    <p>
+      As part of a comprehensive cybersecurity initiative, I conducted a detailed security audit on a company's Windows 11 network infrastructure, evaluating compliance against Microsoft's Security Technical Implementation Guides (STIG) SCAP Benchmark. My role involved scanning systems for vulnerabilities, analyzing compliance gaps, and prioritizing risks through a structured risk register.<br><br>
+      Key challenges included addressing critical issues such as unencrypted drives, weak authentication protocols, and insecure remote access configurations, and effectively communicating these technical risks to non-technical stakeholders.<br><br>
+      Based on the findings of this assessment, I collaborated with a team to develop a tailored Corporate Security Policy aligned with the Center for Internet Security (CIS) Critical Security Controls framework. The policy addressed areas such as remote access, VPN usage, data protection, and incident response, with particular emphasis on securing cloud services and remote connections essential to the company's daily operations.<br><br>
+      This project strengthened my skills in technical auditing, risk assessment, policy development, and cross-functional communication. The outcome was a clear, actionable security improvement plan and corporate policy framework that significantly enhanced the organization's security posture while supporting business continuity.
+    </p>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h3>Active Directory Environment<br></br></h3>
+    <p>
+      I was responsible for building and configuring an Active Directory environment with multiple client machines. I implemented user authentication, group policies, and organizational units to simulate a realistic enterprise network.<br><br>
+      A significant challenge was troubleshooting group policy conflicts and ensuring secure access control. Through this project, I enhanced my skills in Windows Server administration, network security, and system troubleshooting. The outcome was a fully functional directory service demonstrating core enterprise functions.
+    </p>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h3>Phishing Email Server & Exploit<br></br></h3>
+    <p>
+      In this penetration testing project, I developed a phishing email server that targeted simulated users with crafted emails to test security awareness. I also exploited a Windows Server Certificate Authority to decrypt user certificates, demonstrating weaknesses in certificate management.<br><br>
+      Overcoming challenges in setting up the environment and safely executing exploits required attention to detail and ethical responsibility. This experience improved my understanding of attack vectors and the importance of user education in cybersecurity defense.
+    </p>  
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close>&times;</span>
+    <h3>Smart Card Authentication<br></br></h3>
+    <p>
+      I built a secure authentication system using smart cards, including setting up a Certificate Authority, issuing certificates, and configuring login processes with multi-factor authentication.<br><br>
+      Challenges included managing certificate lifecycles and ensuring compatibility with client machines. This project deepened my knowledge of PKI, authentication protocols, and enterprise security infrastructure. The successful deployment demonstrated the effectiveness of smart card-based authentication in enhancing user security.
+    </p>
+  </div>
+</div>
+
+<!--  Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <h3>Contact Info</h3>
+    <p>📧 Email: <a href="mailto:prestonchee@gmail.com">prestonchee@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/prestonchee" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/prestonchee</a></p>
+    <p>📱 Phone: (480) 257-8445</p>
+  </div>
+    <p>&copy; 2025 Preston Chee</p>
+</footer>
+
+<!--  Modal JS -->
+<script>
+  document.querySelectorAll('.main-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) modal.style.display = 'block';
+    });
+  });
+
+  document.querySelectorAll('[data-close]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal').style.display = 'none';
+    });
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
