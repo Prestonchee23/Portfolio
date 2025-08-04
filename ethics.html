@@ -74,7 +74,7 @@
       <h3>Ethical Dilemmas</h3>
       <div class="card-grid">
 
-        <article class="spiritual-card" data-modal="modal-internship">
+        <article class="main-card" data-modal="modal-internship">
           <h3>Internship: Handling Sensitive Customer Data During Testing</h3>
           <p><strong>Overview:</strong> Navigated the ethical challenge of protecting customer 
             privacy by choosing synthetic data over real data for testing.</p>
@@ -107,7 +107,7 @@
 <!--  Modal JS -->
 <script>
   // Open modal when card is clicked
-  document.querySelectorAll(".spiritual-card").forEach(card => {
+  document.querySelectorAll(".main-card").forEach(card => {
     card.addEventListener("click", () => {
       const modalId = card.getAttribute("data-modal");
       const modal = document.getElementById(modalId);
