@@ -158,45 +158,6 @@ footer {
     padding-bottom: 40px;
 }
 
-.project-card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--accent);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.project-card h3 {
-    color: var(--accent);
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 12px;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease;
-}
-
-.project-card a:hover {
-    color: #004c80;
-    text-decoration: underline;
-}
-
 nav a.active {
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
