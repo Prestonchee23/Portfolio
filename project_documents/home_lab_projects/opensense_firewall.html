@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pfsense Router/Firewall</title>
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENXXZSH5KX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ENXXZSH5KX');
+  </script>
+</head>
+
+<body>
+<header>
+  <h1>Preston Chee</h1>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../resume.html">Resume</a>
+    <a href="../../projects.html" class="active">Projects</a>
+    <a href="../../ethics.html">Ethics</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section class="hero">
+    <h2>Proxmox Virtualized Router & Firewall (OPNsense)</h2>
+    <p>Configuring and managing firewall, segmentation with VLANs, and deploying DCHP server.</p>
+  </section>
+
+  <section>
+    <h3>Overview:</h3>
+        <p>I designed and deployed a virtualized router and firewall solution using Proxmox as the hypervisor and OPNsense as the firewall platform. 
+          The objective was to replace traditional consumer-grade routing hardware with a secure, segmented, and scalable virtual infrastructure.
+        <br></br> </p>
+        <p>The environment was built on a Dell OptiPlex server equipped with a multi-port Intel NIC. Proxmox was configured as the virtualization layer, 
+          with dedicated network bridges for management, WAN, and LAN traffic. OPNsense was deployed as a virtual machine and configured to handle routing, 
+          firewall policies, and future services such as DNS (Unbound), DHCP, VPN, and IDS/IPS.
+        <br></br> </p>
+        <p>This project simulates a real-world enterprise edge deployment where firewall virtualization, segmentation, and infrastructure resilience are critical.
+        <br></br> </p>
+        <h3>Complex Challenges Faced:</h3>
+        <ul style="margin-left: 40px;">
+          <li>Designing proper network bridge architecture in Proxmox without losing management access</li>
+          <li>Configuring PCI passthrough for WAN interfaces to ensure performance and isolation</li>
+          <li>Troubleshooting UEFI boot issues during OPNsense VM deployment</li>
+          <li>Ensuring proper separation between Proxmox management and firewall WAN interfaces</li>
+          <li>Planning DHCP, DNS, and gateway transitions without interrupting future network expansion<br></br></li>
+        </ul>
+
+        <h3>Ethical Considerations and Actions Taken:</h3>
+        <ul style="margin-left: 40px;">
+          <li>Ensured firewall management interfaces were never exposed to the WAN</li>
+          <li>Applied the principle of least privilege when designing firewall rule sets</li>
+          <li>Separated management traffic from user traffic to reduce risk exposure</li>
+          <li>Documented configurations clearly to support responsible maintenance and scalability</li>
+        </ul>
+
+        <h3>Outcomes:</h3>
+        <ul style="margin-left: 40px;">
+          <li>Successfully deployed a production-ready virtualized firewall environment</li>
+          <li>Established a scalable network foundation capable of supporting VLANs, VPNs, IDS/IPS, and monitoring systems</li>
+          <li>Strengthened skills in virtualization networking, firewall architecture, and infrastructure design</li>
+          <li>Built a reusable enterprise-style network model suitable for business or home lab environments</li>
+        </ul>
+        <br></br>
+
+        <p>
+            <a href="../../projects.html" class="link-button">← Back to Projects</a>
+        </p>
+  </section>
+
+  </div>
+
+</body>
+</html>
