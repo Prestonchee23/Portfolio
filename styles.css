@@ -234,6 +234,15 @@ nav a.active {
   gap: 1.5rem;
 }
 
+.card-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card-link:visited{
+  color: inherit;
+}
+
 .main-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -254,4 +263,10 @@ nav a.active {
 
 .main-card ul {
   padding-left: 1.2rem;
+}
+/* Ensure hero text stays white (overrides section h2 color) */
+.hero h2,
+.hero h3,
+.hero p {
+  color: #fff;
 }
